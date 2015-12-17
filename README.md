@@ -29,5 +29,4 @@ Here's what they're for:
 
 
 ## License
-
-Liberally licensed under BSD terms.
+Uses the MIT License (http://gibsjose.mit-license.org)

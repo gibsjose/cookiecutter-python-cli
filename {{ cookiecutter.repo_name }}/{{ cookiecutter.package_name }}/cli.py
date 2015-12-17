@@ -4,7 +4,7 @@
 #
 #   {{ cookiecutter.full_name }}    ( {{ cookiecutter.email }} )
 #
-#   License: {{ cookiecutter.license }} (https://{{ cookiecutter.github_username }}.mit-license.org)
+#   License: {{ cookiecutter.license }} (http://{{ cookiecutter.github_username }}.mit-license.org)
 #
 #   {{ cookiecutter.website }}
 #   https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
