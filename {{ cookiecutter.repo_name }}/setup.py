@@ -3,13 +3,13 @@
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['argparse']
 
 setup(
     name='{{ cookiecutter.pypi_name }}',
     version='{{ cookiecutter.version }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-    license='BSD',
+    license='{{ cookiecutter.license }}',
     author='{{ cookiecutter.full_name }}',
     author_email='{{ cookiecutter.email }}',
     description='{{ cookiecutter.project_short_description }}',
@@ -35,7 +35,7 @@ setup(
         # 'Development Status :: 7 - Inactive',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: POSIX',
         'Operating System :: MacOS',
         'Operating System :: Unix',

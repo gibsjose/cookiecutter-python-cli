@@ -7,23 +7,20 @@ from {{cookiecutter.package_name}} import cli
 def runner():
     return CliRunner()
 
-
 def test_cli(runner):
     result = runner.invoke(cli.main)
     assert result.exit_code == 0
     assert not result.exception
-    assert result.output.strip() == 'Hello, world.'
-
+    assert result.output.strip() == 'Hey!'
 
 def test_cli_with_option(runner):
-    result = runner.invoke(cli.main, ['--as-cowboy'])
-    assert not result.exception
+    result = runner.invoke(cli.main, ['-f'])
     assert result.exit_code == 0
-    assert result.output.strip() == 'Howdy, world.'
-
+    assert not result.exception
+    assert result.output.strip() == 'Flag: True'
 
 def test_cli_with_arg(runner):
-    result = runner.invoke(cli.main, ['{{ cookiecutter.full_name.split()[0] }}'])
+    result = runner.invoke(cli.main, ['print', 'hello'])
     assert result.exit_code == 0
     assert not result.exception
-    assert result.output.strip() == 'Hello, {{ cookiecutter.full_name.split()[0] }}.'
+    assert result.output.strip() == 'hello'
