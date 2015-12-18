@@ -2,7 +2,7 @@
 #
 #   {{ cookiecutter.release_date }}
 #
-#   {{ cookiecutter.full_name }}    ( {{ cookiecutter.email }} )
+#   {{ cookiecutter.full_name }} ({{ cookiecutter.email }})
 #
 #   License: {{ cookiecutter.license }} (http://{{ cookiecutter.github_username }}.mit-license.org)
 #
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     try:
         start_time = time.time()
 
-        parser = argparse.ArgumentParser(prog='rocket', description='some awesome new Python script')
+        parser = argparse.ArgumentParser(prog='{{ cookiecutter.script_name }}', description='{{ cookiecutter.project_short_description }}')
 
         # Options
         parser.add_argument('-v', '--verbose', action='store_true', default=False, help='verbose mode')
